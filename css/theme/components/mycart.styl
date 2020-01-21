@@ -1,0 +1,22 @@
+.mycart
+    position: relative
+    z-index: 2
+
+    &__header
+        a
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 48px
+            height: 48px
+
+        .ico
+            width: 23px
+            height: 23px
+
+    .header &
+        margin-left: 0
+
+    @media (min-width: 993px)
+        .header &
+            margin-left: 15px

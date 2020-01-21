@@ -1,5 +1,17 @@
-@media (max-width: 992px)
-    .categories
+
+.categories
+    @media (max-width: 992px)
+        &__show
+            width: 48px
+            height: 48px
+            border-radius: 0
+            background: #ffffff
+            color: color1_bg
+
+            &:hover
+                background: #fff
+                color: color1_bg
+
         .parent
             position: relative
 
@@ -40,6 +52,40 @@
         .all-li--0
             padding-bottom: 0
 
-@media (min-width: 993px)
-    .categories
+    @media (min-width: 993px)
+        position: relative
+        z-index: 10
         margin-bottom: 0 !important
+        background: #fff
+        box-shadow: 10px 0 10px rgba(0, 0, 0, 0.05)
+        transition: all 0.2s ease
+        transform: translateY(-15px)
+
+        .scrolling--down:not(.scrolling--up) &
+            transform: translateY(-62px)
+            pointer-events: none
+
+        .ul--0
+            justify-content: center
+
+        .li--0
+            flex: 0
+            order: -1
+
+            &:first-child
+                order: 1
+
+            &:hover
+                .a--0
+                    background: none
+                    color: color1_bg
+
+        .a--0
+            color: color1_bg
+            font-size: 13px
+            font-weight: regular
+            text-transform: uppercase
+            white-space: nowrap
+            padding: 25px 15px
+            height: auto
+            line-height: 1

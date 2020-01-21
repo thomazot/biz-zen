@@ -399,7 +399,7 @@ svg.img-twitter
 
 .search__input
     flex: 1 1 auto
-    border-radius: 3px 0 0 3px !important
+    border-radius: 3px 0 0 3px
 
 .search__filter
     flex: 0 0 auto
@@ -1438,44 +1438,6 @@ form.searchautocomplete
     fill: color1_bg
 
 /* Meu Carrinho */
-.mycart
-    position: relative
-    z-index: 20
-    height: 2.75rem
-
-.mycart__header a
-    position: relative
-    display: flex
-    align-items: center
-    justify-content: center
-    height: 2.75rem
-    width: 2.75rem
-    box-shadow: inset 0 0 0 1px color1_bg
-    border-radius: 100%
-
-.mycart__header .ico
-    fill: color1_bg
-    width: 1rem
-    height: 1rem
-    max-height: none
-
-.mycart__header .text
-    display: none
-
-.mycart__header .qtd
-    position: absolute
-    top: 0
-    right: -0.25rem
-    width: 1rem
-    height: 1rem
-    border-radius: 100%
-    background: color1_bg_hover
-    color: color1_font_hover
-    line-height: 1rem
-    text-align: center
-    font-size: 0.7rem
-    letter-spacing: -0.1em
-    text-indent: -1.5px
 
 .mycart__content
     max-height: 80vh
@@ -1509,12 +1471,6 @@ form.searchautocomplete
 
 .mycart:hover .mycart__content
     display: block
-
-.mycart:hover .mycart__header a
-    background: color1_bg
-
-.mycart:hover .mycart__header .ico
-    fill: color1_font
 
 .mycart__list
     max-height: 50vh
@@ -1605,45 +1561,6 @@ form.searchautocomplete
     display: none
 
 /* Minha Conta */
-.myaccount
-    position: relative
-    z-index: 20
-    height: 2.75rem
-
-.myaccount__header a
-    position: relative
-    display: flex
-    align-items: center
-    justify-content: center
-    height: 2.75rem
-    width: 2.75rem
-    overflow: hidden
-    box-shadow: inset 0 0 0 1px color1_bg
-    border-radius: 100%
-
-.myaccount__header .thumb
-    position: absolute
-    top: 0
-    left: 0
-
-.myaccount__header .thumb img
-    display: block
-    width: auto
-    height: 2.75rem
-    min-width: 100%
-
-.myaccount__header .thumb:empty
-    display: none
-
-.myaccount__header .ico
-    fill: color1_bg
-    width: 2.75rem
-    height: 2.75rem
-    max-height: none
-    margin: 0
-
-.myaccount__header .name, .myaccount__header .text
-    display: none
 
 .myaccount__content
     position: absolute
@@ -1675,9 +1592,6 @@ form.searchautocomplete
 
 .myaccount:hover .myaccount__content
     display: block
-
-.myaccount:hover .myaccount__header a
-    background: rgba(0, 173, 239, 0.1)
 
 #i-user .female
     display: none
@@ -2880,14 +2794,6 @@ body.ie .owl-prev:before, body.ie .owl-next:before
 
 .footer a:hover
     color: color1_font_hover
-
-.footer .myaccount__header a
-    margin-left: auto
-    background: #fff !important
-    box-shadow: 0 0 0 4px #fff
-
-.footer .myaccount__header a:hover
-    box-shadow: 0 0 0 4px #fff, 0 1rem 1rem -0.5rem rgba(0, 0, 0, 0.3)
 
 .footer .myaccount__content
     display: none !important
@@ -9091,7 +8997,7 @@ table .change-product-link:hover
  */
 /* ------ Estrutura */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .sidebar
         position: fixed
         top: -9999px
@@ -9100,31 +9006,31 @@ table .change-product-link:hover
 
 /* ------ Formulários */
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .options input.datetime-picker
         flex: 0 0 5rem
 
 /* ------ Newsletter */
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .newsletter__form
         display: block
 
 /* ------ .page-title */
 /* ~768px */
-@media (max-width: 48rem)
+@media (max-width: 768px)
     .page-title h1
         font-size: 2rem
 
 /* ------ Busca - Autocomplete */
 /* ~768px */
-@media (max-width: 48rem)
+@media (max-width: 768px)
     .search__filter
         display: none
 
 /* ------ Lista de Desejos */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .mywish__content
         display: none !important
 
@@ -9133,7 +9039,7 @@ table .change-product-link:hover
 
 /* ------ Logo */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .logo .has-m-img .d-img
         display: none !important
 
@@ -9142,7 +9048,7 @@ table .change-product-link:hover
 
 /* ------ Coleção de Produtos */
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .products__item
         flex: 1 1 100%
 
@@ -9188,7 +9094,7 @@ table .change-product-link:hover
         box-shadow: -1rem 0 2rem -1rem rgba(0, 0, 0, 0.8)
 
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .categories--mobi
         position: fixed
         top: 0
@@ -9297,13 +9203,13 @@ table .change-product-link:hover
         background: color1_bg
 
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .categories__show
         margin: 0
 
 /* ------ Marcas */
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .brands .owl-wrapper-outer
         padding: 0 1rem
         margin: 0 -1rem
@@ -9313,7 +9219,7 @@ table .change-product-link:hover
 
 /* ------ Minha Conta */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .myaccount__content
         position: fixed
         top: 0 !important
@@ -9369,7 +9275,7 @@ table .change-product-link:hover
 
 /* ------ Meu Carrinho */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .mycart__content
         position: fixed
         top: 0 !important
@@ -9390,9 +9296,6 @@ table .change-product-link:hover
     .mycart.on .mycart__content
         transform: translateX(0)
 
-    .mycart__header .ico
-        fill: color1_bg !important
-
     .mycart__hide
         display: block
         margin: -1rem -1rem 1rem
@@ -9409,13 +9312,13 @@ table .change-product-link:hover
 
 /* ------ Breadcrumb */
 /* ~768px */
-@media (max-width: 48rem)
+@media (max-width: 768px)
     .breadcrumb
         font-size: 0.8rem
 
 /* ------ Filtros */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .filters .title
         position: fixed
         bottom: 2rem
@@ -9508,7 +9411,7 @@ table .change-product-link:hover
         display: none
 
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .filters .title
         bottom: 1rem
         right: 1rem
@@ -9521,13 +9424,13 @@ table .change-product-link:hover
 
 /* ------ Pagamentos / Envios */
 /* ~768px */
-@media (max-width: 48rem)
+@media (max-width: 768px)
     .pays__svg, .ships__svg
         height: 1rem
 
 /* ------ Banner */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .has_m_img .banner__link
         height: auto !important
 
@@ -9545,7 +9448,7 @@ table .change-product-link:hover
         column-count: 2
 
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .slide__youtube
         padding: 100% 182% 0 0
         height: auto !important
@@ -9555,7 +9458,7 @@ table .change-product-link:hover
 
 /* ------ Modal */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .modal__content
         margin-right: 0
         max-width: calc(100vw - 2rem)
@@ -9564,13 +9467,13 @@ table .change-product-link:hover
         width: calc(100vw - 2rem)
 
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .modal__content
         width: 100vw
 
 /* ------ Floater */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .floater__content
         margin-right: 0
         max-width: calc(100vw - 2rem)
@@ -9579,13 +9482,13 @@ table .change-product-link:hover
         width: calc(100vw - 2rem)
 
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .floater__content
         width: 100vw
 
 /* ------ Termos de Aceite */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .terms__content
         margin-right: 0
         max-width: calc(100vw - 4rem)
@@ -9601,7 +9504,7 @@ table .change-product-link:hover
         width: calc(100vw - 2rem)
 
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .terms__content
         width: 100vw
 
@@ -9617,13 +9520,13 @@ table .change-product-link:hover
         left: auto
 
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .owl-buttons
         display: none
 
 /* ------ Feed RSS */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .feeds--content .feeds__list
         column-count: 1
 
@@ -9635,11 +9538,10 @@ table .change-product-link:hover
         padding-right: 1rem
 
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .header-container
         display: flex
         align-items: center
-        background: color1_bg
         margin: 0
 
     .header
@@ -9648,17 +9550,17 @@ table .change-product-link:hover
     .header-container .loginout
         display: none
 
-    .header-container .mywish__header a, .header-container .mycart__header a, .header-container .myaccount__header a
+    .header-container .mywish__header a
         background: color1_font !important
         box-shadow: none
 
 /* ~768px */
-@media (max-width: 48rem)
+@media (max-width: 768px)
     .mywish
         display: none
 
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .header
         padding: 0.125rem 0 0.125rem 1rem
         margin: 0 !important
@@ -9719,13 +9621,6 @@ table .change-product-link:hover
         margin-left: 0
         z-index: 10
 
-    .header .myaccount__header, .header .mycart__header
-        padding: 0.375rem
-
-    .header .myaccount__header a, .header .mycart__header a
-        width: 2rem
-        height: 2rem
-
 /* ------ Footer */
 /* ~1408px */
 @media (max-width: 88rem)
@@ -9736,7 +9631,7 @@ table .change-product-link:hover
         margin-right: -1rem
 
 /* ~768px */
-@media (max-width: 48rem)
+@media (max-width: 768px)
     .footer__payments, .footer__shipments, .footer__certificates
         flex: 1 1 100%
 
@@ -9748,7 +9643,7 @@ table .change-product-link:hover
 
 /* ------ Catálogo */
 /* ~768px */
-@media (max-width: 48rem)
+@media (max-width: 768px)
     .toolbar
         flex-flow: row wrap
         justify-content: space-between
@@ -9761,7 +9656,7 @@ table .change-product-link:hover
         margin-left: 0
 
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .prolabel, .prolabel.top-center, .prolabel.middle-left, .prolabel.middle-right, .prolabel.bottom-center, .prolabel.middle-center, .prolabel.top-left, .prolabel.top-right, .prolabel.bottom-left, .prolabel.bottom-right
         margin: 5px
         position: static
@@ -9774,7 +9669,7 @@ table .change-product-link:hover
         margin: 0
 
 /* ~468px */
-@media (max-width: 29.25rem)
+@media (max-width: 468px)
     .toolbar .view-mode, .toolbar .limiter
         display: none
 
@@ -9783,7 +9678,7 @@ table .change-product-link:hover
 
 /* ------ Produto */
 /* ~ 1024px */
-@media (max-width: 64rem)
+@media (max-width: 1024px)
     .prod__shop
         flex-flow: column nowrap
 
@@ -9794,7 +9689,7 @@ table .change-product-link:hover
         margin: 0
 
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .prod__img
         margin-right: 1rem
         flex: 1 1 50%
@@ -9908,7 +9803,7 @@ table .change-product-link:hover
         display: block
 
 /* ~768px */
-@media (max-width: 48rem)
+@media (max-width: 768px)
     /* Produto Configurável */
     .configurable
         display: block
@@ -9918,7 +9813,7 @@ table .change-product-link:hover
         flex-flow: column nowrap
 
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     #product_addtocart_form
         display: block
 
@@ -10225,7 +10120,7 @@ table .change-product-link:hover
 
 /* ------ Carrinho */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .cart-table
         margin: 0 -1rem
 
@@ -10236,7 +10131,7 @@ table .change-product-link:hover
         margin: 0 -1rem 1rem
 
 /* ~768px */
-@media (max-width: 48rem)
+@media (max-width: 768px)
     .cart-table h2.name
         font-size: 1rem
 
@@ -10269,13 +10164,13 @@ table .change-product-link:hover
         align-items: flex-start
 
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .cart__boxes
         display: block
 
 /* ------ Finalização */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .opc .header-container
         background: color1_bg
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2)
@@ -10298,7 +10193,7 @@ table .change-product-link:hover
         flex: 1 1 50%
 
 /* ~768px */
-@media (max-width: 48rem)
+@media (max-width: 768px)
     .opc-registered-users
         padding-bottom: 1rem
         margin-bottom: 1rem
@@ -10344,7 +10239,7 @@ table .change-product-link:hover
         height: 2rem
 
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .bcashGrid
         display: block
 
@@ -10433,7 +10328,7 @@ table .change-product-link:hover
 
 /* ------ Sucesso */
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .success-content
         margin: 0 -1rem
 
@@ -10445,7 +10340,7 @@ table .change-product-link:hover
 
 /* ------ Painel do Cliente */
 /* ~992px */
-@media (max-width: 62rem)
+@media (max-width: 992px)
     .my-orders .item-order
         flex: 0 1 50%
 
@@ -10534,7 +10429,7 @@ table .change-product-link:hover
         line-height: 1em
 
 /* ~768px */
-@media (max-width: 48rem)
+@media (max-width: 768px)
     body:not(.sales-order-history) .my-orders .item-order:not(:first-child)
         display: none
 
@@ -10573,7 +10468,7 @@ table .change-product-link:hover
         width: 70%
 
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .box-account .col2-set
         display: block
 
@@ -10675,7 +10570,7 @@ table .change-product-link:hover
 
 /* ------ Revendas */
 /* ~768px */
-@media (max-width: 48rem)
+@media (max-width: 768px)
     .revendas-map
         margin-right: 2rem
         flex: 0 0 200px
@@ -10709,7 +10604,7 @@ table .change-product-link:hover
         list-style: none !important
 
 /* ~568px */
-@media (max-width: 35.5rem)
+@media (max-width: 568px)
     .revendas-index-main
         display: block
 

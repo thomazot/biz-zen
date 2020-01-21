@@ -690,7 +690,7 @@
         m_categories: true,
         m_search: true,
         m_filters: true,
-        m_myaccount: true,
+        m_myaccount: false,
         m_mycart: true,
         m_parcelamento: true,
         m_frete: true,
@@ -904,7 +904,6 @@ function default_carrossel_produtos() {
                         [568, 2],
                         [768, 3],
                         [1024, 4],
-                        [1270, 5],
                     ],
                     beforeMove: function() {
                         if (typeof $j.fn.lazyload != 'undefined') {
@@ -1140,19 +1139,9 @@ function is468() {
  */
 function hideHeader(status) {
     if (status) {
-        $j('.header-container').animate(
-            {
-                top: '-' + $j('.header-container').outerHeight() + 'px',
-            },
-            200
-        )
+        $j('.header-container').addClass('up')
     } else {
-        $j('.header-container').animate(
-            {
-                top: '0px',
-            },
-            200
-        )
+        $j('.header-container').removeClass('up')
     }
     return false
 }
@@ -1330,7 +1319,7 @@ $j.fn.neonTheme.custom = {
     m_categories: true, // ativa o responsivo do Menu de Categorias
     m_search: true, // ativa o responsivo da Busca
     m_filters: true, // ativa o responsivo dos Filtros do Catálogo
-    m_myaccount: true, // ativa o responsivo da Minha Conta
+    m_myaccount: false, // ativa o responsivo da Minha Conta
     m_mycart: true, // ativa o responsivo do Meu Carrinho
     m_parcelamento: true, // ativa o responsivo do parcelamento na página de produto
     m_frete: true, // ativa o responsivo do cálculo de frete na página do produto

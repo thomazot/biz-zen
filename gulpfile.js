@@ -2,14 +2,11 @@ var gulp = require('gulp'),
     svgSprite = require('gulp-svg-sprite'),
     stylus = require('gulp-stylus'),
     svgmin = require('gulp-svgmin'),
-    gulpif = require('gulp-if'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     pxtorem = require('postcss-pxtorem'),
     browserSync = require('browser-sync').create(),
     path = require('path'),
-    backstop = require('backstopjs'),
-    url = require('url'),
     concat = require('gulp-concat'),
     path = require('path')
 
@@ -18,6 +15,7 @@ var { rootValue, unitPrecision } = config.pxtorem
 var { protocol, host, theme } = config
 
 var processors = [
+    require('css-mqpacker')(),
     autoprefixer({
         grid: true,
         cascade: false,
@@ -43,6 +41,14 @@ var processors = [
         mediaQuery: false,
         minPixelValue: 0,
         replace: true,
+    }),
+    require('cssnano')({
+        preset: [
+            'default',
+            {
+                normalizeWhitespace: false,
+            },
+        ],
     }),
 ]
 
@@ -113,8 +119,8 @@ gulp.task('prod', function() {
                 },
             })
         )
-        .pipe(postcss(processors))
         .pipe(concat('one.css'))
+        .pipe(postcss(processors))
         .pipe(gulp.dest('./css'))
 })
 
@@ -141,8 +147,8 @@ gulp.task('dev', function() {
             console.error(err.message)
             this.emit('end')
         })
-        .pipe(postcss(processors))
         .pipe(concat('one.css'))
+        .pipe(postcss(processors))
         .pipe(gulp.dest('./css'))
         .pipe(browserSync.stream())
 })

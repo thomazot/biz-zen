@@ -2,3 +2,20 @@
     &-container
         position: sticky
         top: 0
+        background: #fff
+
+        &.up
+            transform: translateY(-65px)
+
+    @media (min-width: 993px)
+        position: relative
+        margin-bottom: 0 !important
+        padding-bottom: 15px
+        background: #fff
+        box-shadow: 800px 0 0 #fff, -800px 0 0 #fff
+        z-index: 20
+
+        &-container
+            background: none
+            box-shadow: none
+            max-height: 125px
