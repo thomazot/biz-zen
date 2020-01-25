@@ -1336,6 +1336,10 @@ $j.fn.neonTheme.custom = {
             mode: 'prepend',
             ratio: false,
         },
+        'z-close': {
+            selector: '.mycart__remove',
+            mode: 'html',
+        }
     },
 }
 

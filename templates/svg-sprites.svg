@@ -58,5 +58,5 @@
     <symbol viewBox="0 0 13 9.01" id="z-prev" xmlns="http://www.w3.org/2000/svg"><g data-name="Camada 2"><path d="M4.25.14a.44.44 0 01.65 0 .45.45 0 010 .64L1.58 4.05h11a.46.46 0 110 .91h-11L4.9 8.23a.46.46 0 01-.65.65L.14 4.83a.43.43 0 010-.64z" data-name="Camada 1"/></g></symbol>
     <symbol viewBox="0 0 17 17" id="z-search" xmlns="http://www.w3.org/2000/svg"><g data-name="Camada 2"><path d="M16.9 15.89L12 11a6.74 6.74 0 10-1 1l4.93 4.94a.38.38 0 00.51 0l.5-.5a.38.38 0 00-.04-.55zM6.73 12A5.31 5.31 0 1112 6.73 5.31 5.31 0 016.73 12z" data-name="Camada 1"/></g></symbol>
     <symbol viewBox="0 0 23 23" id="z-user" xmlns="http://www.w3.org/2000/svg"><g data-name="Camada 2"><path d="M19.63 14.87a11.42 11.42 0 00-4.37-2.74 6.65 6.65 0 10-7.52 0A11.52 11.52 0 000 23h1.8a9.7 9.7 0 0119.4 0H23a11.43 11.43 0 00-3.37-8.13zM11.5 11.5a4.85 4.85 0 114.85-4.85 4.85 4.85 0 01-4.85 4.85z" data-name="Camada 1"/></g></symbol>
-
+    <symbol viewBox="0 0 20 20" id="z-close" xmlns="http://www.w3.org/2000/svg"><g data-name="Camada 2"><path d="M8.9 10L.23 18.67a.77.77 0 000 1.1.77.77 0 001.1 0L10 11.1l8.67 8.67a.78.78 0 001.1-1.1L11.1 10l8.67-8.67a.77.77 0 000-1.1.77.77 0 00-1.1 0L10 8.9 1.33.23a.77.77 0 00-1.1 0 .77.77 0 000 1.1z" data-name="Camada 1"/></g></symbol>
 </svg>
