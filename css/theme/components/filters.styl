@@ -1,0 +1,88 @@
+.filters
+    @media (max-width: 992px)
+        &__list
+            background: #fff
+
+        &__filter
+            margin-top: 20px
+
+            .a--0
+                font-size: 14px
+                font-weight: regular
+                color: color1_bg
+
+        &__name
+            color: color1_bg
+            font-size: 16px
+            text-transform: uppercase
+
+    @media (min-width: 993px)
+        > .title
+            display: none
+
+        &__name
+            margin-bottom: 0
+            line-height: 1
+            font-size: 12px
+            font-weight: regular
+            color: #959595
+
+        &__list
+            display: flex
+            justify-content: space-between
+            margin: 0 -15px
+
+        &__filter
+            position: relative
+            flex: 1
+            display: flex
+            align-items: center
+            min-width: 0
+            margin: 0 15px
+            line-height: 1
+            height: 40px
+            padding: 0 40px 0 15px
+            box-shadow: inset 0 0 0 1px #ebebeb
+            cursor: pointer
+            background: url(ico-down)
+            background-repeat: no-repeat
+            background-position: right 15px center
+
+            .a--0, .a-filter
+                font-size: 12px
+                font-weight: regular
+                color: #959595
+
+            ol, ul
+                position: absolute
+                top: calc(100% + 5px)
+                left: 0
+                width: 100%
+                margin: 0
+                padding: 15px
+                box-shadow: inset 0 0 0 1px #ebebeb
+                transition: all 0.2s ease
+                opacity: 0
+                visibility: hidden
+
+            &:hover
+                box-shadow: inset 0 0 0 1px #ebebeb
+
+                ol, ul
+                    opacity: 1
+                    visibility: visible
+
+        &__swatches
+            .ul--0
+                margin: 0
+
+        &__filtered
+            .subtitle
+                font-size: 13px
+                font-weight: regular
+                text-transform: uppercase
+
+        .filtered__clear
+            font-size: 10px
+            font-weight: regular
+            text-transform: uppercase

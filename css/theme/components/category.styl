@@ -1,0 +1,37 @@
+.category
+    &-title
+        display: none
+
+    &-description
+        border: 0
+        padding: 40px 0 0
+        border-top: solid 1px #eeeeee
+
+        &, .std
+            font-size: 14px
+            font-weight: regular
+            color: #959595
+
+            h3
+                font-size: 25px
+                font-weight: light
+                text-transform: uppsercase
+                letter-spacing: 4px
+                color: #150f0f
+
+.catalog-category-view
+    .col-main
+        display: flex
+        flex-flow: column nowrap
+
+    .category__products
+        order: -1
+
+    @media (min-width: 993px)
+        .col-left
+            flex: 1
+            max-width: none
+            margin-bottom: 50px
+
+        .main
+            display: block

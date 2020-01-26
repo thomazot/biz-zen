@@ -4,8 +4,13 @@
         top: 0
         background: #fff
 
-        &.up
-            transform: translateY(-65px)
+        @media (max-width: 568px)
+            &.up
+                transform: translateY(-52px)
+
+        @media (min-width: 569px)
+            &.up
+                transform: translateY(-80px)
 
     @media (min-width: 993px)
         position: relative
