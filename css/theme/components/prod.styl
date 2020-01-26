@@ -121,6 +121,53 @@
                 font-weight: regular
                 color: #959595
 
+    &__shop-info
+        display: none
+
+        .user-logged &
+            display: block
+
+    &__login
+        .user-logged &
+            display: none
+
+    &__login
+        padding: 30px
+        text-align: center
+        background: #f4f4f4
+        font-size: 15px
+        font-weight: regular
+        color: #150f0f
+
+        &-title
+            font-size: 20px
+            font-weight: bold
+            color: #150f0f
+
+        &-description
+            margin-bottom: 30px
+
+        a
+            display: flex
+            width: 100%
+            justify-content: center
+            align-items: center
+            font-size: 12px
+            font-weight: regular
+            text-transform: uppercase
+            height: 40px
+            background: #150f15
+            color: #fff
+            max-width: 120px
+
+        &-actions
+            display: flex
+            align-items: center
+            justify-content: center
+
+            span
+                padding: 0 20px
+
     @media (min-width: 993px)
         &__img
             flex: 0 0 60%

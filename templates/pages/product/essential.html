@@ -7,52 +7,61 @@
         <div class="prod__name">
 			<h1>@nome</h1>
         </div>
-        
-        @variacoes
-        @bt(sobconsulta "Sob Consulta")
-        @temporizador
+        <div class="prod__login">
+            <h3 class="prod__login-title">Você é lojista?</h3>
+            <div class="prod__login-description">Faça login ou cadastre-se para ver o preço e comprar!</div>
+            <div class="prod__login-actions">
+                <a href="/customer/account/login/">Login</a>
+                <span>ou</span>
+                <a href="/customer/account/create/">Cadastre-se</a>
+            </div>
+        </div>
+        <div class="prod__shop-info">
+            @variacoes
+            @bt(sobconsulta "Sob Consulta")
+            @temporizador
 
-        <div class="prod__prices">
-            @if(is_disponivel)
-                @preco
-                @preco(avista)
-                @preco(parcelado)	
-            
-                @brinde
-            
-                @programa-fidelidade(Compre e Ganhe)
-                @bt(comprar)
-            
-            @else(is_disponivel)		
-                <div class="prod__esgotado">
-                    <div class="title title--sm">Produto Esgotado</div>
-                    @alertas
+            <div class="prod__prices">
+                @if(is_disponivel)
+                    @preco
+                    @preco(avista)
+                    @preco(parcelado)	
+                
+                    @brinde
+                
+                    @programa-fidelidade(Compre e Ganhe)
+                    @bt(comprar)
+                
+                @else(is_disponivel)		
+                    <div class="prod__esgotado">
+                        <div class="title title--sm">Produto Esgotado</div>
+                        @alertas
+                    </div>
+                @endif(is_disponivel)
+            </div>
+
+            <div class="prod__tabs">
+                <div class="prod__tabs-title">
+                    Detalhes do produto 
+                    <svg class="ico z-more">
+                        <use xlink:href="#z-more" />
+                    </svg>
                 </div>
-            @endif(is_disponivel)
-        </div>
+                <div class="prod__tabs-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at eros sed lacus varius maximus et pretium mauris. Donec justo risus, fermentum quis risus sed, lacinia facilisis felis. </p>
+                    <p>Composição: 100% Poliéster / Forro: 100% Poliéster.</p>
+                </div>
 
-        <div class="prod__tabs">
-            <div class="prod__tabs-title">
-                Detalhes do produto 
-                <svg class="ico z-more">
-                    <use xlink:href="#z-more" />
-                </svg>
-            </div>
-            <div class="prod__tabs-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at eros sed lacus varius maximus et pretium mauris. Donec justo risus, fermentum quis risus sed, lacinia facilisis felis. </p>
-                <p>Composição: 100% Poliéster / Forro: 100% Poliéster.</p>
-            </div>
-
-            <div class="prod__tabs-title">
-                Medidas
-                <svg class="ico z-more">
-                    <use xlink:href="#z-more" />
-                </svg>
-            </div>
-            <div class="prod__tabs-content">
-                <img src="@img(tabela-medidas)" alt="medidas" />
+                <div class="prod__tabs-title">
+                    Medidas
+                    <svg class="ico z-more">
+                        <use xlink:href="#z-more" />
+                    </svg>
+                </div>
+                <div class="prod__tabs-content">
+                    <img src="@img(tabela-medidas)" alt="medidas" />
+                </div>
             </div>
         </div>
-
     </div>
 </div>
