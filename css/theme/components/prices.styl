@@ -1,0 +1,39 @@
+.price-box
+    display: flex
+    margin-bottom: 0
+
+    .regular-price, .special-price, .minimal-price
+        .label
+            display: none
+
+        .price span
+            font-size: 14px
+            font-weight: regular
+            color: #150f0f
+
+    .old-price
+        margin-right: 10px
+
+        .label
+            display: none
+
+        .price
+            text-decoration: none
+
+            span
+                text-decoration: line-through
+                font-size: 13px
+                font-weight: regular
+                color: #959595
+
+.price-box-parcelado
+    .preco-parcelado
+        display: none
+
+        &-sem-juros
+            display: block
+
+            &, .num span, .value span
+                font-size: 12px
+                font-weight: regular
+                color: #959595

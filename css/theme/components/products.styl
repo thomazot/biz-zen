@@ -1,0 +1,115 @@
+.products
+    &__title
+        font-size: 20px
+        font-weight: bold
+        text-transform: uppercase
+        text-align: center
+        letter-spacing: 2px
+
+    &__case
+        display: flex
+        flex-flow: column nowrap
+        box-shadow: none
+
+    &__header
+        flex: 0 0 auto
+
+        img
+            width: 100%
+            height: 335px
+            object-fit: contain
+
+    &__main
+        flex: 1
+        display: flex
+        flex-flow: column nowrap
+        min-width: 0
+
+    &__prices, &__logins
+        flex: 1
+        min-height: 0
+
+    &__name
+        flex: 0 0 auto
+        display: block
+        font-size: 14px
+        font-weight: regular
+        padding-bottom: 5px
+
+    &__prices
+        display: none
+        flex-flow: column nowrap
+
+    &__stores
+        font-size: 12px
+        text-transform: uppercase
+        color: #DD403C
+        margin: 0 0 15px
+
+    &__login
+        display: flex
+        justify-content: center
+        align-items: center
+        background: color1_bg
+        color: #fff
+        height: 31px
+        font-size: 13px
+        font-weight: regular
+        line-height: 1
+        text-transform: uppercase
+
+        &:hover
+            color: #fff
+
+    .user-logged &
+        &__logins
+            display: none
+
+        &__prices
+            display: flex
+
+    .configurable-swatch-list
+        a
+            min-width: 0
+            padding: 2px
+            border-radius: 50%
+            box-shadow: 0 0 0 1px #fff
+
+            &:hover
+                background: #fff
+                box-shadow: 0 0 0 1px #ACACAC
+
+        img
+            width: 15px
+            height: 15px
+            border-radius: 50%
+
+    .add-to-cart
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        padding: 0
+        height: 30px
+        border-radius: 0
+        font-size: 13px
+        font-weight: regular
+        text-transform: uppercase
+        background: #4eaf7d
+        margin-top: auto
+
+        &:hover
+            background: darken(#4eaf7d, 20%)
+
+    @media (min-width: 992px)
+        .carrossel &__item
+            padding: 0 15px
+
+        &__prices, &__logins
+            opacity: 0
+            transition: all 0.2s ease
+
+        &__case:hover
+            .products
+                &__prices, &__logins
+                    opacity: 1

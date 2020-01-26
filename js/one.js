@@ -1339,7 +1339,15 @@ $j.fn.neonTheme.custom = {
         'z-close': {
             selector: '.mycart__remove',
             mode: 'html',
-        }
+        },
+        'z-prev': {
+            selector: '.owl-prev',
+            mode: 'html',
+        },
+        'z-next': {
+            selector: '.owl-next',
+            mode: 'html',
+        },
     },
 }
 
