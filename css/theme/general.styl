@@ -17,6 +17,7 @@ icon(i)
  * Mixin - Font-weight
  */
 font = 'Open Sans', sans-serif
+font-georgia = 'Georgia', sans-serif
 light = 300
 regular = 400
 medium = 500
@@ -48,3 +49,19 @@ $container
     max-width: 'calc(100% - %s)' % gap
     margin-left: auto
     margin-right: auto
+
+$title-vitrine
+    font-size: 25px
+    font-weight: light
+    color: #150f0f
+    letter-spacing: 5px
+    text-transform: uppercase
+    padding-left: 21px
+    line-height: 29px
+
+    strong
+        display: block
+        font-family: font-georgia
+        font-size: 50px
+        text-transform: lowercase
+        margin-left: -21px
