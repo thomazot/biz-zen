@@ -1,0 +1,30 @@
+.related
+    .product-collateral &
+        &__subtitle, &__add-checkbox
+            display: none
+
+        &__title
+            font-size: 0
+            text-transform: uppercase
+            margin: 0
+
+            &:before
+                font-size: 16px
+                content: 'Relacionados'
+
+            &:after
+                font-size: 20px
+
+            @media (max-width: 568px)
+                border-top: solid 1px #ebebeb
+                border-bottom: solid 1px #ebebeb
+                padding: 25px 0
+
+                &:before
+                    font-weight: regular
+
+            @media (min-width: 993px)
+                text-align: center
+
+                &:before
+                    font-size: 20px

@@ -1,0 +1,58 @@
+<div class="prod__img">
+    @fotos
+    @selos
+</div>
+<div class="prod__shop">
+    <div class="col">
+        <div class="prod__name">
+			<h1>@nome</h1>
+        </div>
+        
+        @variacoes
+        @bt(sobconsulta "Sob Consulta")
+        @temporizador
+
+        <div class="prod__prices">
+            @if(is_disponivel)
+                @preco
+                @preco(avista)
+                @preco(parcelado)	
+            
+                @brinde
+            
+                @programa-fidelidade(Compre e Ganhe)
+                @bt(comprar)
+            
+            @else(is_disponivel)		
+                <div class="prod__esgotado">
+                    <div class="title title--sm">Produto Esgotado</div>
+                    @alertas
+                </div>
+            @endif(is_disponivel)
+        </div>
+
+        <div class="prod__tabs">
+            <div class="prod__tabs-title">
+                Detalhes do produto 
+                <svg class="ico z-more">
+                    <use xlink:href="#z-more" />
+                </svg>
+            </div>
+            <div class="prod__tabs-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at eros sed lacus varius maximus et pretium mauris. Donec justo risus, fermentum quis risus sed, lacinia facilisis felis. </p>
+                <p>Composição: 100% Poliéster / Forro: 100% Poliéster.</p>
+            </div>
+
+            <div class="prod__tabs-title">
+                Medidas
+                <svg class="ico z-more">
+                    <use xlink:href="#z-more" />
+                </svg>
+            </div>
+            <div class="prod__tabs-content">
+                <img src="@img(tabela-medidas)" alt="medidas" />
+            </div>
+        </div>
+
+    </div>
+</div>

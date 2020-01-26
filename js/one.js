@@ -1453,7 +1453,7 @@ $j(document)
             }
         })
 
-        $j('.instagram__content').owlCarousel({
+        $('.instagram__content').owlCarousel({
             itemsScaleUp: true,
             navigation: true,
             navigationText: ['?', '?'],
@@ -1465,6 +1465,13 @@ $j(document)
                 [768, 3],
                 [993, 4],
             ],
+        })
+
+        $('.prod__tabs-title').click(function() {
+            $(this).toggleClass('on')
+            $(this)
+                .next()
+                .toggleClass('on')
         })
     })
     .on('resizeStop', function(e) {

@@ -1,0 +1,126 @@
+.product-image-container
+    @media (min-width: 993px)
+        display: flex
+
+        .product-image
+            flex: 1
+            min-width: 0
+
+        .more-views
+            order: -1
+            width: 140px
+            padding-right: 15px
+
+        .product-image-thumbs
+            display: block
+
+            img
+                width: 100%
+                height: 162px
+                object-fit: contain
+
+.product-image-gallery
+    box-shadow: none
+
+.product-image-thumbs
+    .thumb-link
+        &, &.on, &:hover
+            box-shadow: none
+
+.add-to-cart-buttons
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+
+    .qty-wrapper
+        margin-right: 30px
+        margin-bottom: 0
+
+.add-to-cart-btn
+    flex: 1
+    min-width: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 42px
+    border-radius: 0
+    padding: 0
+    font-size: 18px
+    font-weight: regular
+    text-transform: uppercase
+    background: #4eaf7d
+    color: #fff
+
+    span
+        line-height: 1
+
+    &:hover
+        background: rgba(#4eaf7d, 20%)
+
+.prod
+    &__name
+        border-bottom: solid 1px #ebebeb
+        padding-bottom: 15px
+        margin-bottom: 15px
+
+        h1
+            font-size: 20px
+            font-weight: bold
+            color: #150f0f
+            line-height: 1.2
+
+    &__prices
+        border-top: solid 1px #ebebeb
+        padding-top: 20px
+
+    &__shop
+        .add-to-cart-btn
+            line-height: 1
+
+            span
+                line-height: 1
+
+    &__tabs
+        &-title
+            display: flex
+            justify-content: space-between
+            align-items: center
+            font-size: 15px
+            font-weight: regular
+            color: #252525
+            text-transform: uppercase
+            padding: 15px 0
+            margin: 0
+            border-top: solid 1px #ebebeb
+
+            .ico
+                width: 14px
+                height: 14px
+
+            &.on
+                .ico
+                    display: none
+
+                &:after
+                    content: ''
+                    width: 14px
+                    height: 2px
+                    background: #000
+
+        &-content
+            display: none
+            margin: 15px 0
+            max-width: 100%
+            overflow: hidden
+
+            &.on
+                display: block
+
+            &, .std
+                font-size: 13px
+                font-weight: regular
+                color: #959595
+
+    @media (min-width: 993px)
+        &__img
+            flex: 0 0 60%
