@@ -1,2 +1,57 @@
 .cms-home .header-container + .banner
     margin-top: -16px
+
+.banner
+    &--vitrine
+        .cms-home &
+            margin-bottom: 80px
+
+        .banner
+            &__container
+                display: flex
+                justify-content: center
+                flex-wrap: wrap
+                margin: -15px
+
+            &__item
+                position: relative
+                padding: 15px
+
+            &__img
+                width: 100%
+                object-fit: contain
+
+            &__legend
+                display: flex
+                flex-flow: column nowrap
+                position: absolute
+                bottom: 30px
+                left: 30px
+                height: 70px
+                max-width: 120px
+                font-size: 20px
+                font-weight: bold
+                text-transform: uppercase
+                color: #fff
+                letter-spacing: 2px
+                line-height: 1.2
+
+                span
+                    display: flex
+                    justify-content: flex-start
+                    align-items: center
+                    margin-top: auto
+                    font-size: 12px
+                    font-weight: regular
+                    text-transform: lowercase
+                    letter-spacing: 0px
+
+            &__ico
+                width: 10px
+                height: 10px
+                margin-left: 5px
+                margin-top: 2px
+
+            @media (min-width: 768px)
+                &__container
+                    flex-wrap: nowrap
