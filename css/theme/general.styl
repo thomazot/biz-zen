@@ -56,7 +56,6 @@ $title-vitrine
     color: #150f0f
     letter-spacing: 5px
     text-transform: uppercase
-    padding-left: 21px
     line-height: 29px
 
     strong
@@ -64,4 +63,14 @@ $title-vitrine
         font-family: font-georgia
         font-size: 50px
         text-transform: lowercase
+
+$title-vitrine-left
+    @extend $title-vitrine
+    padding-left: 21px
+
+    strong
         margin-left: -21px
+
+$title-vitrine-center
+    @extend $title-vitrine
+    text-align: center

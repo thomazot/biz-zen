@@ -1,0 +1,34 @@
+.instagram
+    &__header
+        padding: 50px 0
+
+    &__title
+        @extend $title-vitrine-center
+
+    &__content
+        .owl-buttons
+            display: block
+
+        .owl-item
+            justify-content: center
+
+        &:not(.owl-carousel)
+            display: flex
+            width: 100%
+            overflow: hidden
+
+            a
+                min-width: 295px
+
+        a
+            display: inline-block
+            padding: 15px
+
+        img
+            width: 100%
+            object-fit: cover
+
+    @media (max-width: viewport + 219)
+        &__content
+            &.owl-carousel
+                padding: 0 30px

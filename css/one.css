@@ -10321,7 +10321,6 @@ body{
   color:#150f0f;
   letter-spacing:.31rem;
   text-transform:uppercase;
-  padding-left:1.31rem;
   line-height:1.81rem;
 }
 .about__title strong{
@@ -10329,6 +10328,11 @@ body{
   font-family:Georgia,sans-serif;
   font-size:3.13rem;
   text-transform:lowercase;
+}
+.about__title{
+  padding-left:1.31rem;
+}
+.about__title strong{
   margin-left:-1.31rem;
 }
 .about__header{
@@ -10427,6 +10431,52 @@ body{
 .header-container.up{
   -webkit-transform:translateY(-65px);
   transform:translateY(-65px);
+}
+
+.instagram__title{
+  font-size:1.56rem;
+  font-weight:300;
+  color:#150f0f;
+  letter-spacing:.31rem;
+  text-transform:uppercase;
+  line-height:1.81rem;
+}
+.instagram__title strong{
+  display:block;
+  font-family:Georgia,sans-serif;
+  font-size:3.13rem;
+  text-transform:lowercase;
+}
+.instagram__title{
+  text-align:center;
+}
+.instagram__header{
+  padding:3.13rem 0;
+}
+.instagram__content .owl-buttons{
+  display:block;
+}
+.instagram__content .owl-item{
+  -webkit-box-pack:center;
+  justify-content:center;
+}
+.instagram__content:not(.owl-carousel){
+  display:-webkit-box;
+  display:flex;
+  width:100%;
+  overflow:hidden;
+}
+.instagram__content:not(.owl-carousel) a{
+  min-width:295px;
+}
+.instagram__content a{
+  display:inline-block;
+  padding:.94rem;
+}
+.instagram__content img{
+  width:100%;
+  -o-object-fit:cover;
+  object-fit:cover;
 }
 
 .header .logo{
@@ -12779,6 +12829,11 @@ body{
 @media (min-width:768px){
   .banner--vitrine .banner__container{
     flex-wrap:nowrap;
+  }
+}
+@media (max-width:1389px){
+  .instagram__content.owl-carousel{
+    padding:0 1.88rem;
   }
 }
 @media (min-width:1390px){
