@@ -1,3 +1,41 @@
 .footer
     &-container
-        display: none
+        background: #f4f4f4
+
+    &__row
+        padding: 35px 0
+
+    &__title
+        font-size: 15px
+        font-weight: bold
+        color: #150f0f
+        text-transform: uppercase
+        margin-bottom: 15px
+
+    &__box
+        padding-bottom: 20px
+
+    &__copyright
+        padding: 0 0 20px
+
+        .std
+            font-size: 11px
+            font-weight: regular
+            color: #959595
+            text-align: center
+
+    @media (max-width: 992px)
+        text-align: center
+
+        .flex--a-center
+            justify-content: center
+
+    @media (min-width: 993px)
+        &__row
+            display: flex
+            justify-content: space-between
+            margin: 0 -30px
+
+        &__box
+            flex: 0 1 25%
+            padding: 0 30px
