@@ -1453,26 +1453,41 @@ $j(document)
             }
         })
 
-        $('.instagram__content').owlCarousel({
-            itemsScaleUp: true,
-            navigation: true,
-            navigationText: ['?', '?'],
-            pagination: false,
-            items: 4,
-            itemsCustom: [
-                [0, 2],
-                [568, 2],
-                [768, 3],
-                [993, 4],
-            ],
-        })
-
         $('.prod__tabs-title').click(function() {
             $(this).toggleClass('on')
             $(this)
                 .next()
                 .toggleClass('on')
         })
+
+        if ($('#instafeed').length) {
+            var userFeed = new Instafeed({
+                get: 'user',
+                userId: '3181699803',
+                resolution: 'standard_resolution',
+                accessToken:
+                    '3181699803.1677ed0.cbefe941c1194d90b05aa282437b7f08',
+                after: function() {
+                    $('.instagram__content').owlCarousel({
+                        itemsScaleUp: true,
+                        navigation: true,
+                        navigationText: [
+                            '<svg class="ico z-prev"><use xlink:href="#z-prev" /></svg>',
+                            '<svg class="ico z-next"><use xlink:href="#z-next" /></svg>',
+                        ],
+                        pagination: false,
+                        items: 4,
+                        itemsCustom: [
+                            [0, 2],
+                            [568, 2],
+                            [768, 3],
+                            [993, 4],
+                        ],
+                    })
+                },
+            })
+            userFeed.run()
+        }
     })
     .on('resizeStop', function(e) {
         // Safe window.resize

@@ -10306,6 +10306,7 @@ body{
 
 .cms-home .header-container+.banner{
   margin-top:-1rem;
+  margin-bottom:3.13rem;
 }
 .cms-home .banner--vitrine{
   margin-bottom:5rem;
@@ -10500,7 +10501,7 @@ body{
   min-width:0;
 }
 .header .logo img,.header .logo svg{
-  height:3rem;
+  height:3.63rem;
 }
 
 .myaccount__header a{
@@ -10891,6 +10892,19 @@ body{
 }
 .add-to-cart-btn:hover{
   background:rgba(78, 175, 125, .2);
+}
+.attribute-options-images-wholesale table tbody td,.attribute-options-images-wholesale table tbody td:first-child,.attribute-options-images-wholesale table tbody td:last-child,.attribute-options-images-wholesale table tbody th,.attribute-options-images-wholesale table tbody th:first-child,.attribute-options-images-wholesale table tbody th:last-child{
+  border:0;
+}
+.attribute-options-images-wholesale table thead td,.attribute-options-images-wholesale table thead th{
+  background:#fff;
+  color:#150f0f;
+  font-size:.81rem;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.attribute-options-images-wholesale img{
+  border-radius:38px;
 }
 .prod__name{
   border-bottom:1px solid #ebebeb;
@@ -12027,6 +12041,10 @@ body{
   .mycart__content{
     margin-top:4.06rem;
   }
+  .attribute-options-images-wholesale{
+    max-width:100%;
+    overflow-x:auto;
+  }
 }
 
 @media (max-width:568px){
@@ -13077,9 +13095,12 @@ body{
     height:auto;
     line-height:1;
   }
-  .categories .a--1{
+  .categories .a--1,.categories .all-a--0{
     font-size:.88rem;
     font-weight:400;
+  }
+  .categories .all-a--0:hover,.categories .all-a--1:hover{
+    box-shadow:none;
   }
   .categories__block{
     margin:-1rem;
@@ -13183,11 +13204,10 @@ body{
     display:flex;
     -webkit-box-pack:justify;
     justify-content:space-between;
-    margin:0 -1.88rem;
   }
   .footer__box{
     -webkit-box-flex:0;
-    flex:0 1 25%;
+    flex:0 1 245px;
     padding:0 1.88rem;
   }
   .header{
@@ -13233,12 +13253,16 @@ body{
   .product-image-container .product-image-thumbs img{
     width:100%;
     height:10.13rem;
-    -o-object-fit:contain;
-    object-fit:contain;
+    -o-object-fit:cover;
+    object-fit:cover;
   }
-  .prod__img{
-    -webkit-box-flex:0;
-    flex:0 0 60%;
+  .prod__img,.prod__shop{
+    -webkit-box-flex:1;
+    flex:1;
+  }
+  .prod__shop{
+    min-width:0;
+    display:block;
   }
   .product-collateral .related__title{
     text-align:center;
@@ -13269,6 +13293,12 @@ body{
 @media (min-width:768px){
   .banner--vitrine .banner__container{
     flex-wrap:nowrap;
+  }
+}
+
+@media (min-width:1230px){
+  .footer__row{
+    margin:0 -1.88rem;
   }
 }
 
