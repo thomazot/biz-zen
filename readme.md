@@ -164,3 +164,10 @@ O commando copia o svg sprite para o clipboard e salva o resultado em ```templat
 ```shell
 gulp svg
 ```
+
+### docker start
+
+```shell
+#windows
+docker run -it --rm -p 8080:8080 -v ${pwd}:/biz -w="/biz" node:10 bash
+````
